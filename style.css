@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+    line-height: 1.8;
+    color: #5a4a42;
+    background: #fdf8f5;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8b6f5c;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #7a6a5f;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #c49a7c;
+}
+
+.hero {
+    text-align: center;
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, #f5e6dc 0%, #edd9c8 50%, #e8d0bc 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #6b5344;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #9c7e6e;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #a08b7d;
+    font-style: italic;
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #8b6f5c;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #d4b8a3;
+    margin: 0.8rem auto 0;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #7a6a5f;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card.award p {
+    color: #c49a7c;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    color: #9c8b7d;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f5ebe3;
+    color: #a08b7d;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 3rem 1.5rem;
+    }
+}
